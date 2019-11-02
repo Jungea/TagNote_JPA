@@ -1,0 +1,46 @@
+/*--------------------- article 1 --------------------*/
+.frame.closeNav {
+	grid-template-areas: "header" "article" "footer";
+	grid-template-columns: 1fr;
+}
+
+article {
+	display: grid;
+	grid-template-rows: 120px 1fr;
+	grid-gap: 0px;
+}
+
+article>.artDiv1 {
+	border-bottom: 1px solid lightgray;
+}
+
+.artDiv1>.grid {
+	max-width: 400px;
+	padding: 15px;
+}
+
+/*--------------------- article 2--------------------*/
+.wrap {
+	width: 100%;
+	padding: 10px 20px 20px 20px;
+}
+
+.wrap textarea {
+	width: 100%;
+	resize: none;
+	overflow-y: hidden; /* prevents scroll bar flash */
+	padding: 1.1em; /* prevents text jump on Enter keypress */
+	padding-bottom: 0.2em;
+	line-height: 1.6;
+	border: none;
+}
+
+.wrap textarea:focus {
+	outline: none;
+}
+
+.memoDate {
+	float: right;
+	font-size: 13px;
+	color: grey;
+}

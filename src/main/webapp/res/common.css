@@ -1,0 +1,79 @@
+/*---------------------Grid Layout--------------------*/
+body {
+	margin: 0;
+}
+
+.frame {
+	display: grid;
+	grid-template-areas: "header header header" "nav article article"
+		"footer footer footer";
+	grid-template-rows: 50px 1fr 30px;
+	grid-template-columns: 250px 1fr;
+	grid-gap: 0px;
+	height: 100vh;
+}
+
+#pageHeader {
+	grid-area: header;
+}
+
+#pageFooter {
+	grid-area: footer;
+}
+
+#mainArticle {
+	grid-area: article;
+	overflow: auto;
+}
+
+#mainNav {
+	grid-area: nav;
+	overflow: auto;
+}
+
+a {
+	color: black !important;
+}
+
+/*--------------------- header --------------------*/
+header {
+	background-color: #00b5ad;
+	border-bottom: 1px solid lightgray;
+	font-weight: bold;
+	font-size: 25px;
+	vertical-align: middle;
+	line-height: 50px;
+	padding-left: 25px;
+}
+
+/*--------------------- footer --------------------*/
+footer {
+	background-color: lightgray;
+}
+
+/*--------------------- nav --------------------*/
+nav {
+	border-right: 1px solid lightgray;
+}
+
+nav>.navDiv1 {
+	border-bottom: 1px solid lightgray;
+	text-align: center;
+	padding: 10px 0 10px 0;
+}
+
+nav>.navDiv1>button {
+	width: 200px;
+}
+
+nav>.navDiv2 {
+	padding: 10px 20px 10px 20px;
+}
+
+nav>.navDiv2>.ui>.item {
+	margin: 5px;
+}
+
+nav>.navDiv4 {
+	padding: 10px 25px 10px 25px;
+}
